@@ -1,5 +1,3 @@
-Aqui está uma versão simplificada da documentação, com foco na explicação da aplicação e destacando que o arquivo de coordenadas é obrigatório:
-
 # Aplicação de Extração de Notas Escolares
 
 ## Visão Geral
