@@ -45,8 +45,6 @@ python get_grades.py boletim.pdf -o notas.json -c coordenadas.json
 - Bibliotecas: pytesseract, pdf2image, Pillow, opencv-python, numpy, PyPDF2
 - Tesseract OCR instalado no sistema
 
-Aqui está a documentação em formato Markdown para os scripts:
-
 # Documentação dos Scripts
 
 ## `get_grade_coords.py`
