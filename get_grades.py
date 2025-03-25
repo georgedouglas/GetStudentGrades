@@ -120,6 +120,10 @@ def extract_student_data(img, coordinates_json=None, debug=False, debug_path=Non
         combined_text = f"{header_text} {student_text}"
 
         patterns = {
+            'Escola': r'ESCOLA:\s\d+\s-\s(.+?)\sMUN[ÍI]C[ÍI]PIO:',
+            'INEP Escola': r'ESCOLA:\s(\d+)',
+            'CREDE': r'CREDE\s(\d+)',
+            'Municipio': r'MUN[ÍI]C[ÍI]PIO:\s([A-ZÀ-ÜÇ]+(?:[\s-][A-ZÀ-ÜÇ]+)*)(?=\s|$)',
             'Ano Letivo': r'(?:ANO|ANO\s+LETIVO)\s+(\d{4})',
             'Aluno(a)': r'ALUNO\(A\):\s*([A-ZÀ-ÜÇ\s]+?)\s*(?:NASCIMENTO|$)',
             'Matrícula': r'MATR[ÍI]CULA:\s*(\d+)',
