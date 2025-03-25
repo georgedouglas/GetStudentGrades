@@ -175,7 +175,7 @@ python get_grades.py caminho_do_pdf.pdf -o output.json [-b batch_size] [-c coord
 - `pdf_path`: Caminho para o arquivo PDF
 - `-o/--output`: Arquivo de saída JSON (obrigatório)
 - `-b/--batch`: Tamanho do lote de páginas (padrão: 3)
-- `-c/--coordinates`: Arquivo JSON com coordenadas
+- `-c/--coordinates`: Arquivo JSON com coordenadas (obrigatório)
 - `-d/--debug`: Ativa modo debug
 - `--debug-path`: Pasta para arquivos debug (padrão: "debug_output")
 
@@ -186,4 +186,4 @@ python get_grades.py caminho_do_pdf.pdf -o output.json [-b batch_size] [-c coord
 ### Observações
 1. Para melhor precisão no OCR, ajuste as coordenadas conforme necessário
 2. O modo debug ajuda a verificar se as regiões estão sendo detectadas corretamente
-3. O arquivo de coordenadas é opcional, mas melhora a precisão na extração de notas
+3. O arquivo de coordenadas é obrigatório
