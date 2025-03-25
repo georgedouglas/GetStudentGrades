@@ -6,7 +6,7 @@ import pytesseract
 import cv2
 import numpy as np
 
-
+#
 def safe_crop(image, x0, y0, x1, y1):
     """Garante que o recorte esteja dentro dos limites da imagem"""
     h, w = image.shape[:2] if len(image.shape) == 3 else image.shape

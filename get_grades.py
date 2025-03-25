@@ -10,7 +10,7 @@ import os
 from PIL import Image, ImageDraw
 import uuid
 
-
+# 
 def process_region(img, coords, is_numeric=False, custom_config=None, debug=False, debug_path=None, region_name=""):
     """Função independente para processar regiões de imagem"""
     try:
